@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import CircularProgress from '@mui/material/CircularProgress';
+import { useState } from 'react';
 
 const Container = styled.div`
 display: flex;
@@ -17,19 +19,34 @@ align-items: center;
 `
 
 const Wrapper = styled.div`
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-width: 100%;
-max-width: 1350px;
-padding: 0px 0px 80px 0px;
-gap: 12px;
-@media (max-width: 960px) {
-    flex-direction: column;
-}
-`
+  position: relative;
+  min-height: 100%; /* Ensure the wrapper takes up at least the height of its content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1350px;
+  padding: 0px 0px 80px 0px;
+  gap: 12px;
+  @media (max-width: 960px) {
+      flex-direction: column;
+  }
+`;
+
+
+const LoadingOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: trasparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 
 const Title = styled.div`
 font-size: 42px;
@@ -123,27 +140,37 @@ const ContactButton = styled.input`
 
 
 const Contact = () => {
-
-  //hooks
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false); 
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
+    setLoading(true); 
+    emailjs
+      .sendForm('service_3dae74a', 'template_w9maxl8', form.current, '_pw0-6PcDPNQdLNNL')
+      .then(
+        (result) => {
+          setOpen(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      )
+      .finally(() => {
+        setLoading(false); 
       });
-  }
-
-
+  };
 
   return (
     <Container>
       <Wrapper>
+        {loading && (
+          <LoadingOverlay>
+            <CircularProgress />
+          </LoadingOverlay>
+        )}
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
@@ -152,7 +179,7 @@ const Contact = () => {
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value="Send" disabled={loading} />
         </ContactForm>
         <Snackbar
           open={open}

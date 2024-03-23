@@ -19,11 +19,12 @@ const Projects = ({ openModal, setOpenModal }) => {
     <Container id="projects">
       <Wrapper>
         <Title>Projects</Title>
+        
         <Desc>
-          I have worked on a wide range of projects. From web apps to android
+          I have worked on a wide range of projects. From web apps to android as well as PineScript (TradingView)
           apps. Here are some of my projects.
-        </Desc>
-        <ToggleButtonGroup>
+        </Desc> 
+         <ToggleButtonGroup>
           {toggle === "all" ? (
             <ToggleButton active value="all" onClick={() => setToggle("all")}>
               All
@@ -65,20 +66,20 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "machine learning" ? (
+          {toggle === "pine script" ? (
             <ToggleButton
               active
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
+              value="pine script"
+              onClick={() => setToggle("pine script")}
             >
-              MACHINE LEARNING
+              PINES CRIPT v5
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
+              value="pine script"
+              onClick={() => setToggle("pine script")}
             >
-              MACHINE LEARNING
+              PINES CRIPT v5
             </ToggleButton>
           )}
         </ToggleButtonGroup>

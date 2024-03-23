@@ -94,10 +94,10 @@ export const RightContainer = styled.div`
 
 export const Img = styled.img`
   position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  width: auto; /* Adjust width automatically based on image size */
+  height: auto; /* Adjust height automatically based on image size */
+  max-width: 100%; /* Maximum width of the image container */
+  max-height: 100%; /* Maximum height of the image container */
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
 
@@ -111,6 +111,7 @@ export const Img = styled.img`
     max-height: 280px;
   }
 `;
+
 
 export const Title = styled.div`
   font-weight: 700;

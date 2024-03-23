@@ -200,6 +200,34 @@ export const projects = [
     category: "pine script",
     webapp: "https://www.tradingview.com/script/sFf6gNQI-Scalper-Buy-Sell/",
   },
+
+  {
+    id: 1,
+    title: "Dragonland",
+    date: "Jun 2022 - Sep 2022",
+    description:
+      "DragonLand is a Unity-based game developed during my university studies. In this game, players embark on an adventure to defeat enemies across three levels. They collect weapons and strategically engage in combat to progress. Victory awaits those who conquer the final boss on level three.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/d6.png?alt=media&token=e05462fa-1e9e-4eac-acf1-909492d294d6",
+    tags: ["Unity"],
+    category: "Unity",
+    viewLiveApp: "disable"
+    
+  },
+
+  {
+    id: 3,
+    title: "Trabot",
+    date: "Sep 2022 - Dec 2022",
+    description:
+      "Trabot is my Final Year Project developed during university studies. It's an innovative cryptocurrency auto-trading platform employing both arithmetic and geometric grid trading strategies. By harnessing grid functionality, Trabot streamlines cryptocurrency trading, offering users an automated approach to optimize trading outcomes.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/Trabot.png?alt=media&token=6c9a118a-b92d-4973-a0d5-31e1692f2df5",
+    tags: ["Adnroid App"],
+    category: "android app",
+    viewLiveApp: "disable"
+    
+  },
   // {
   //   id: 1,
   //   title: "Vexa",
@@ -338,6 +366,21 @@ export const projects = [
   //   github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   //   webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   // },
+];
+
+export const achivement = [
+  {
+    id: 0,
+    title: "AI for Product Management",
+    grantor: "Pendo",
+    date: "March 2023",
+    img:
+      "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/aiforproduct.jpg?alt=media&token=bb385eb3-1eba-4a5b-81c1-83e2f43343f7",
+    skills: ["AI" , "Product Management"],
+    desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
+    
+  },
+  
 ];
 
 export const TimeLineData = [

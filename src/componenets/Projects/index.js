@@ -19,12 +19,12 @@ const Projects = ({ openModal, setOpenModal }) => {
     <Container id="projects">
       <Wrapper>
         <Title>Projects</Title>
-        
+
         <Desc>
-          I have worked on a wide range of projects. From web apps to android as well as PineScript (TradingView)
-          apps. Here are some of my projects.
-        </Desc> 
-         <ToggleButtonGroup>
+          I have worked on a wide range of projects. From web apps to android as
+          well as PineScript (TradingView) apps. Here are some of my projects.
+        </Desc>
+        <ToggleButtonGroup>
           {toggle === "all" ? (
             <ToggleButton active value="all" onClick={() => setToggle("all")}>
               All
@@ -82,6 +82,25 @@ const Projects = ({ openModal, setOpenModal }) => {
               PINES CRIPT v5
             </ToggleButton>
           )}
+          <Divider />
+          {toggle === "Unity" ? (
+            <ToggleButton
+              active
+              value="unity"
+              onClick={() => setToggle("Unity")} // Change this to "Unity"
+            >
+              Unity
+            </ToggleButton>
+          ) : (
+            <ToggleButton
+              value="unity"
+              onClick={() => setToggle("Unity")} // Change this to "Unity"
+            >
+              Unity
+            </ToggleButton>
+          )}
+
+          <Divider />
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&

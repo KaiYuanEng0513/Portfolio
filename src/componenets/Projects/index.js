@@ -87,14 +87,14 @@ const Projects = ({ openModal, setOpenModal }) => {
             <ToggleButton
               active
               value="unity"
-              onClick={() => setToggle("Unity")} // Change this to "Unity"
+              onClick={() => setToggle("Unity")} 
             >
               Unity
             </ToggleButton>
           ) : (
             <ToggleButton
               value="unity"
-              onClick={() => setToggle("Unity")} // Change this to "Unity"
+              onClick={() => setToggle("Unity")} 
             >
               Unity
             </ToggleButton>

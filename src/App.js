@@ -15,6 +15,7 @@ import Education from "./componenets/Education";
 import ProjectDetails from "./componenets/ProjectDetails";
 import styled from "styled-components";
 import Achivement from "./componenets/Achivement";
+import { achievement } from "./data/constants.js";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -55,7 +56,7 @@ function App() {
             <Education />
           <Wrapper>
             
-            <Achivement/>
+            <Achivement achievement={achievement}/>
           </Wrapper>
             <Contact />
           </Wrapper>

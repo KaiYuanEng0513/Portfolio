@@ -368,7 +368,7 @@ export const projects = [
   // },
 ];
 
-export const achivement = [
+export const achievement  = [
   {
     id: 0,
     title: "AI for Product Management",

@@ -14,7 +14,7 @@ import Experience from "./componenets/Experience";
 import Education from "./componenets/Education";
 import ProjectDetails from "./componenets/ProjectDetails";
 import styled from "styled-components";
-import Achivement from "./componenets/Achivement";
+import Achievement from "./componenets/Achievement";
 import { achievement } from "./data/constants.js";
 
 const Body = styled.div`
@@ -56,7 +56,7 @@ function App() {
             <Education />
           <Wrapper>
             
-            <Achivement achievement={achievement}/>
+            <Achievement achievement={achievement}/>
           </Wrapper>
             <Contact />
           </Wrapper>

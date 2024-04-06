@@ -6,6 +6,7 @@ import { CardActionArea } from "@mui/material";
 import CardMedia from "@mui/material/CardMedia";
 import Modal from "@mui/material/Modal";
 import { CloseRounded } from "@mui/icons-material";
+import AchievementCard from "../Cards/AchivementCard";
 
 const Container = styled.div`
   display: flex;
@@ -51,6 +52,7 @@ const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   max-width: 600px;
+
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     margin-top: 12px;
@@ -61,6 +63,18 @@ const Desc = styled.div`
 const Div = styled.div`
   margin-bottom: 35px;
   margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 80px; 
+  
+`;
+
+const CardMediaStyled = styled(CardMedia)`
+  width: 100%; 
+  max-width: 300px;
+  
+   
 `;
 
 const Container2 = styled.div`
@@ -103,11 +117,11 @@ const Title2 = styled.div`
 `;
 
 const Image = styled.img`
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-top: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 `;
 
 const Index = ({ achievement }) => {
@@ -123,16 +137,21 @@ const Index = ({ achievement }) => {
     setOpen(false);
   };
   return (
-    <Container id="achievement ">
+    <Container id="achievement">
       <Wrapper>
         <Title>Certificates & Badges</Title>
         <Desc>Explore a collection of my certifications and badges</Desc>
         <Div>
-          <CardActionArea>
-            {achievement.map((ach, index) => (
-              <CardMedia key={ach.id} component="img" height="140" image={ach.img} onClick={() => handleOpen(ach)} />
-            ))}
-          </CardActionArea>
+          {achievement.map((ach, index) => (
+            <CardActionArea key={ach.id}>
+              <CardMediaStyled
+                component="img"
+                height="140"
+                image={ach.img}
+                onClick={() => handleOpen(ach)}
+              />
+            </CardActionArea>
+          ))}
         </Div>
       </Wrapper>
       <Modal
@@ -155,7 +174,7 @@ const Index = ({ achievement }) => {
               }}
               onClick={handleClose}
             />
-            <Image src={selectedAchievement?.img}/>
+            <Image src={selectedAchievement?.img} />
           </Wrapper2>
         </Container2>
       </Modal>

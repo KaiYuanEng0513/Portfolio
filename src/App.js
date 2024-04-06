@@ -54,6 +54,7 @@ function App() {
           <Wrapper>
             <Education />
           <Wrapper>
+            
             <Achivement/>
           </Wrapper>
             <Contact />

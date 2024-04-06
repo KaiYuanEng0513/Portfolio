@@ -100,7 +100,7 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButton>
           )}
 
-          <Divider />
+          
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&

@@ -169,7 +169,7 @@ export const experiences = [
       "Git",
       "ReactJS",
       "Tailwind CSS",
-      "Material UI"
+      "Material UI",
     ],
   },
 ];
@@ -184,7 +184,6 @@ export const education = [
     desc: "I demonstrated proficiency in programming languages by developing and implementing various mobile apps, websites, and systems for class projects. Additionally, I completed coursework in key subjects like data structures, algorithms, and software design principles, achieving a GPA of 2.9384 in relevant courses. During a semester-long internship at a tech company, I collaborated with senior engineers on software development projects. For my Final Year Project, I designed and developed a user-friendly mobile app for crypto auto trading, incorporating grid functionality to automate trades effectively.",
     degree: "Bachelor of Science (HONS) Software Engineering",
   },
-
 ];
 
 export const projects = [
@@ -211,8 +210,7 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/d6.png?alt=media&token=e05462fa-1e9e-4eac-acf1-909492d294d6",
     tags: ["Unity"],
     category: "Unity",
-    viewLiveApp: "disable"
-    
+    viewLiveApp: "disable",
   },
 
   {
@@ -225,8 +223,7 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/Trabot.png?alt=media&token=6c9a118a-b92d-4973-a0d5-31e1692f2df5",
     tags: ["Adnroid App"],
     category: "android app",
-    viewLiveApp: "disable"
-    
+    viewLiveApp: "disable",
   },
   // {
   //   id: 1,
@@ -368,19 +365,52 @@ export const projects = [
   // },
 ];
 
-export const achivement = [
+export const achievement = [
   {
     id: 0,
     title: "AI for Product Management",
     grantor: "Pendo",
-    date: "March 2023",
-    img:
-      "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/aiforproduct.jpg?alt=media&token=bb385eb3-1eba-4a5b-81c1-83e2f43343f7",
-    skills: ["AI" , "Product Management"],
+    date: "March 2024",
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/aiforproduct.jpg?alt=media&token=bb385eb3-1eba-4a5b-81c1-83e2f43343f7",
+    skills: ["AI", "Product Management"],
     desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
-    
   },
-  
+  {
+    id: 1,
+    title: "Intoduction to Blockchain Technologies",
+    grantor: "INSEAD",
+    date: "March 2024",
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/Coursera%20AZQHJME4YT5T-1.png?alt=media&token=58270f69-f089-4df7-a1f5-07e405d72c6d",
+    skills: ["Blockchain"],
+    desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
+  },
+  {
+    id: 2,
+    title: "Entrepreneurship Strategy in New Norm",
+    grantor: "University Tunku Abdul Rahman",
+    date: "March 2021",
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/20210323_Entrepreneurship%20Strategy%20in%20New%20Norm-1.png?alt=media&token=fb535aa0-af2c-42d6-b134-8d0974c4a0a2",
+    skills: ["Soft Skills"],
+    desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
+  },
+  {
+    id: 3,
+    title: "Mindset for Entrepreneurship",
+    grantor: "University Tunku Abdul Rahman",
+    date: "January 2023",
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/ENG%20KA%20YUAN-1.png?alt=media&token=b85a7f10-3fa8-420a-a585-8d7fba7aa9fb",
+    skills: ["Soft Skills"],
+    desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
+  },
+  {
+    id: 4,
+    title: "Event Planning and Hosting Skills",
+    grantor: "University Tunku Abdul Rahman",
+    date: "March 2021",
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/20210317%2618_%20Event%20Planning%20and%20Hosting%20Skills-1.png?alt=media&token=bd0bd0f8-dfcb-47ec-9d9b-8126832bdca0",
+    skills: ["Soft Skills"],
+    desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
+  },
 ];
 
 export const TimeLineData = [

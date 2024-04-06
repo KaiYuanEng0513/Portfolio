@@ -144,30 +144,30 @@ const Skill = styled.div`
 
 
 
-const AchivementCard = ({ achivement }) => {
+const AchievementCard = ({achievement }) => {
     return (
         <Card>
             <Top>
-                <Image src={achivement.img} />
+                <Image src={achievement.img} />
                 
                 <Body>
-                    <Role>{achivement.title}</Role>
-                    <Company>{achivement.grantor}</Company>
-                    <Date>{achivement.date}</Date>
+                    <Role>{achievement.title}</Role>
+                    <Company>{achievement.grantor}</Company>
+                    <Date>{achievement.date}</Date>
                 </Body>
             </Top>
             <Description>
-                {achivement?.desc &&
-                    <Span>{achivement?.desc}</Span>
+                {achievement?.desc &&
+                    <Span>{achievement?.desc}</Span>
 
                 }
-                {achivement?.skills &&
+                {achievement?.skills &&
                     <>
                         <br />
                         <Skills>
                             <b>Skills:</b>
                             <ItemWrapper>
-                                {achivement?.skills?.map((skill, index) => (
+                                {achievement?.skills?.map((skill, index) => (
                                     <Skill>• {skill}</Skill>
                                 ))}
                             </ItemWrapper>
@@ -175,13 +175,13 @@ const AchivementCard = ({ achivement }) => {
                     </>
                 }
             </Description>
-            {achivement.doc &&
-                <a href={achivement.doc} target="new">
-                    <Document src={achivement.doc} />
+            {achievement.doc &&
+                <a href={achievement.doc} target="new">
+                    <Document src={achievement.doc} />
                 </a>
             }
         </Card>
     )
 }
 
-export default AchivementCard
+export default AchievementCard

@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/KaiYuanEng0513",
   resume:
-    "https://drive.google.com/file/d/12Rza9jj4vjszebffPRs-lEeJJVqcIwKB/view?usp=drive_link",
+    "https://drive.google.com/file/d/1MH5F7l26jmwn6JM_XWObetoJoPYbACaF/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/eng-kai-yuan-a1b476276/",
   insta: "https://www.instagram.com/kaiyuann__/",
   facebook: "https://www.facebook.com/eng.kaiyuan/",
@@ -377,6 +377,15 @@ export const achievement = [
   },
   {
     id: 1,
+    title: "Principles of UX/UI Dewsign",
+    grantor: "Meta",
+    date: "April 2024",
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/Principle%20Of%20UIUX-1.png?alt=media&token=3441613c-1e2c-45f3-9776-08239dab90e6",
+    skills: ["AI", "Product Management"],
+    desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
+  },
+  {
+    id: 2,
     title: "Intoduction to Blockchain Technologies",
     grantor: "INSEAD",
     date: "March 2024",
@@ -385,7 +394,7 @@ export const achievement = [
     desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
   },
   {
-    id: 2,
+    id: 3,
     title: "Entrepreneurship Strategy in New Norm",
     grantor: "University Tunku Abdul Rahman",
     date: "March 2021",
@@ -394,7 +403,7 @@ export const achievement = [
     desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
   },
   {
-    id: 3,
+    id: 4,
     title: "Mindset for Entrepreneurship",
     grantor: "University Tunku Abdul Rahman",
     date: "January 2023",
@@ -403,7 +412,16 @@ export const achievement = [
     desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
   },
   {
-    id: 4,
+    id: 5,
+    title: "The Growth Mindset",
+    grantor: "UCDAVIS",
+    date: "April 2024",
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/TheGrowthMindset-1.png?alt=media&token=f8fd5e70-a85f-4455-9c0a-2861796d94c5",
+    skills: ["Soft Skills"],
+    desc: "Earned the AI for Product Management badge, signifying proficiency in leveraging artificial intelligence tools and techniques to drive strategic product development initiatives",
+  },
+  {
+    id: 6,
     title: "Event Planning and Hosting Skills",
     grantor: "University Tunku Abdul Rahman",
     date: "March 2021",

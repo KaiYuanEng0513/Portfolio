@@ -94,16 +94,16 @@ export const RightContainer = styled.div`
 
 export const Img = styled.img`
   position: relative;
-  width: auto; /* Adjust width automatically based on image size */
-  height: auto; /* Adjust height automatically based on image size */
-  max-width: 100%; /* Maximum width of the image container */
-  max-height: 100%; /* Maximum height of the image container */
+  width: auto; 
+  height: auto; 
+  max-width: 80%; 
+  max-height: 80%; 
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 768px) {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   @media (max-width: 640px) {

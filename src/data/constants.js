@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/KaiYuanEng0513",
   resume:
-    "https://drive.google.com/file/d/1MH5F7l26jmwn6JM_XWObetoJoPYbACaF/view?usp=sharing",
+    "https://drive.google.com/file/d/1zQGrOAci0rEPWapDCi-yOF5XKesVw1bQ/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/eng-kai-yuan-a1b476276/",
   insta: "https://www.instagram.com/kaiyuann__/",
   facebook: "https://www.facebook.com/eng.kaiyuan/",
@@ -136,24 +136,6 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/mh-logo.png?alt=media&token=b2a4ce12-061c-4205-bf1d-6a1d504a20d0",
-    role: "Software Engineering Intern",
-    company: "MH Multipack Sdn Bhd",
-    date: "Oct 2023 - Dec 2023",
-    desc: "Working on the development of automation machine software frontend and designing schematic diagrams using HAKKO HMI Version 5 software.",
-    skills: ["HAKKO HMI Version 5", "UI/UX", "Figma", "JavaScript"],
-  },
-  {
-    id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/download%20(3).png?alt=media&token=0d0d05e4-49af-4d41-9923-17a8a57e4864",
-    role: "Front-end Web Developer",
-    company: "Freelance",
-    date: "Jan 2022 - Dec 2022",
-    desc: "Built website using Wordpress, Wix.com, Bluehost and Shopify",
-    skills: ["HTML", "CSS", "JavaScript", "Figma", "UI/UX"],
-  },
-  {
-    id: 2,
     img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/download%20(2).jpeg?alt=media&token=c869cc68-a595-4674-8389-c259192d7816",
     role: "Associate Developer ",
     company: "Lenovo PCCW Solution Malaysia",
@@ -171,6 +153,24 @@ export const experiences = [
       "Tailwind CSS",
       "Material UI",
     ],
+  },
+  {
+    id: 1,
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/download%20(3).png?alt=media&token=0d0d05e4-49af-4d41-9923-17a8a57e4864",
+    role: "Front-end Web Developer",
+    company: "Freelance",
+    date: "Jan 2022 - Dec 2022",
+    desc: "Built website using Wordpress, Wix.com, Bluehost and Shopify",
+    skills: ["HTML", "CSS", "JavaScript", "Figma", "UI/UX"],
+  },
+  {
+    id: 2,
+    img: "https://firebasestorage.googleapis.com/v0/b/profile-d71da.appspot.com/o/mh-logo.png?alt=media&token=b2a4ce12-061c-4205-bf1d-6a1d504a20d0",
+    role: "Software Engineering Intern",
+    company: "MH Multipack Sdn Bhd",
+    date: "Oct 2023 - Dec 2023",
+    desc: "Working on the development of automation machine software frontend and designing schematic diagrams using HAKKO HMI Version 5 software.",
+    skills: ["HAKKO HMI Version 5", "UI/UX", "Figma", "JavaScript"],
   },
 ];
 

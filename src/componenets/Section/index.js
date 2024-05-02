@@ -15,7 +15,7 @@ import {
   SocialMediaIcon,
   ResumeButton,
 } from "./Style";
-import ProfileImg from "../../images/KaiYuan.jpg";
+import ProfileImg from "../../images/KaiYuan.jpeg";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
 
